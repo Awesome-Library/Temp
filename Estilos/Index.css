@@ -1,0 +1,435 @@
+
+
+/* Menu */
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300i'); 
+
+/* Logo */
+
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300');
+
+/* Empresa */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+/*********************************************** Geral */
+
+body, html {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*********************************************** Header */
+
+.heading {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.menu {
+    background: #ffffff;
+    display: block;
+    text-align: center;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    padding: 0.8%;
+}
+
+@media (max-width: 700px){
+    .menu > ul > li {
+        padding: 2%;
+        transition-duration: 2s;
+    }
+}
+
+@media (max-width: 420px){
+    .menu > ul > li {
+        padding: 4%;
+        display: block;
+    }
+}
+
+.menu > ul > li > a {
+    font-family: 'Lato', sans-serif;
+    color: #000000;
+    text-decoration: none;
+    outline: none;
+}
+
+.menu > ul > li > a:hover {
+    transition-duration: 1s;
+    color: #a7a9ac;
+}
+
+.menu > ul > li > a:active {
+    color: #7d8085;
+}
+
+.head_logo {
+    position: relative;
+    width: 100% !important;
+    height: 100% !important;
+    background-image: url(../Imagens/Back/Header.jpg);
+    background-repeat: no-repeat;
+    background-position: center center fixed;
+    background-size: 100%;
+    color: #ffffff;
+    font-family: 'Oxygen', sans-serif;
+    text-shadow: -1px 0px 1px #222222;
+}
+
+@media (max-width: 865px){
+    .head_logo {
+        transition-duration: 2s;
+        background-size: 115%;
+    }
+}
+
+@media (max-width: 740px){
+    .head_logo {
+        transition-duration: 2s;
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 705px){
+    .head_logo {
+        transition-duration: 1.5s;
+        background-size: 145%;
+    }
+}
+
+@media (max-width: 640px){
+    .head_logo {
+        transition-duration: 1.5s;
+        background-size: 205%;
+    }
+}
+
+.head_logo > h1 {
+    text-align: center;
+    position: relative;
+    top: 50%; 
+    font-size: 2.2em;
+}
+
+@media (max-width: 1250px){
+    .head_logo > h1 {
+        transition-duration: 1s;
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 900px){
+    .head_logo > h1 {
+        transition-duration: 1s;
+        font-size: 1.7em;
+    }
+}
+
+@media (max-width: 700px){
+    .head_logo h1 {
+        transition-duration: 1s;
+        font-size: 1.9em;
+    }
+}
+
+/*********************************************** Container */
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 85%;
+    padding: 0.9em;
+    background-color: #ffffff;
+}
+
+@media (max-width: 420px) {
+    .container {
+        width: 85%;
+        transition-duration: 1s;
+    }
+}
+
+/*********************************************** Empresa */
+
+.empresa {
+    margin-bottom: 2em;
+}
+
+@media (max-width: 600px) {
+    .empresa {
+        transition-duration: 1s;
+        padding: 4%;
+    }
+}
+
+.empresa > h3 {
+    text-transform: capitalize;
+    width: 10%;
+    background-image: linear-gradient(120deg, #9a9ca0 0%, #cecfd1 100%);
+    padding: 0.8%;
+    color: #ffffff;
+    border-radius: 10px 2px;
+    text-align: center;
+    font-family: monospace;
+    margin-left: 1em;
+    font-size: 1em;
+}
+
+@media (max-width: 800px){
+    .empresa > h3 {
+        transition-duration: 1s;
+        width: 20%;
+    }
+}
+
+@media (max-width: 500px){
+    .empresa > h3 {
+        transition-duration: 2s;
+        width: 85%;
+        padding: 3%;
+    }
+}
+
+.descricao {
+    display: flex;
+    -webkit-justify-content: space-between;
+            justify-content: space-between;
+}
+
+.descricao > p > img {
+    width: 4em;
+    float: left;
+    margin: 0% 10% 1% 0%;
+}
+
+@media (max-width: 1000px) {
+    .descricao {
+        transition-duration: 1s;
+        flex-wrap: wrap; 
+    }
+    .descricao > p > img {
+        transition-duration: 1s;
+        margin: 1% 5% 0% 5%;
+    }
+}
+
+.descricao > p {
+    line-height: 26px;
+    margin: 2em;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    color: #6a6a6a;
+    padding: 2%;
+    font-size: 1.9vh;
+    border-bottom: 1px solid #a7a9ac;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    /* background: #eeeeee; */
+}
+
+@media (max-width: 1360px){
+    .descricao > p {
+        transition-duration: 1s;
+        font-size: 1.7vh;
+    }
+}
+
+@media (max-width: 1200px){
+    .descricao > p {
+        transition-duration: 1s;
+        padding: 0.9%;
+        margin: 1.0em;
+        font-size: 1.9vh;
+    }
+}
+
+@media (max-width: 1000px){
+    .descricao > p {
+        transition-duration: 1s;
+        padding: 1%;
+        margin: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+    .descricao > p {
+        transition-duration: 1s;
+        padding: 4%;
+    }
+}
+
+/*********************************************** Serviços */
+
+.servicos {
+    position: relative;
+    display: block;
+    margin: 8% 0%;
+    padding: 0% 2% 3% 2%;
+}
+
+@media (max-width: 500px){
+    .servicos {
+        transition-duration: 2s;
+        padding: 0% 3% 5% 3%;
+        margin: 20% 0%;
+    }
+}
+
+.servicos > h2 {
+    position: relative;
+    z-index: 2;
+    width: 4em;
+    left: 0.5em;
+    top: 1.7em;
+    background-image: linear-gradient(120deg, #cecfd1 0%, #9a9ca0 100%);
+    box-shadow: 0px 0px 9px #c1c3c5;
+}
+
+.servicos > h2 {
+    text-transform: capitalize;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.95em;
+    color: #ffffff;
+    padding: 1%;
+}
+
+@media (max-width: 550px) {
+    .servicos > h2 {
+        transition-duration: 1s;
+        left: 0.1em;
+        top: 1.8em;
+        padding: 2%;
+    }
+}
+
+.servicos dl {
+    position: relative;
+    z-index: 1;
+    width: 95%;
+    margin: 0 auto;  
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background: #fcfcfc;
+    box-shadow: 0px 0px 10px #f4f4f4;
+}
+
+@media (max-width: 700px) {
+    .servicos dl {
+        transition-duration: 2s;
+        padding-top: 8%;
+        padding-bottom: 8%;
+    }
+}
+
+.bloco {
+    position: relative;
+    display: block;
+    margin: 1em;
+    padding: 0.5%;
+}
+
+.bloco dt {
+    color: #ffffff;
+    width: 6%;
+    background-image: linear-gradient(120deg, #cecfd1 0%,#9a9ca0 100%);
+    box-shadow: 0px 0px 2px #c1c3c5;
+    text-shadow: 0px 2px 2px #9a9ca0;
+    margin-bottom: 2em;
+    padding: 5px;
+    border-radius: 5px 10px;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 0.9em;
+    text-align: center
+}
+
+.bloco dd {
+    color: #6a6a6a;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.8em;
+}
+
+@media (max-width: 900px) {
+    .bloco {
+        margin: 1em;
+        padding: 2%;
+        transition-duration: 1s;
+    }
+    .bloco dt {
+        transition-duration: 1s;
+        margin-bottom: 1.5em;
+        border-radius: 0px 5px;
+        width: 20%;
+    }
+    .bloco dd {
+        transition-duration: 1s;
+        line-height: 30px;
+    }
+}
+
+/*********************************************** Contato */
+
+.contato {
+    background-image: url("../Imagens/Moun.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    // background: #fcfcfc;
+    margin: 50px 0px;
+    padding: 5vh;
+    border-radius: 2px 2px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato form fieldset {
+    border-color: rgba(0,0,0,0);
+    padding: 5vh; 
+}
+
+.btn {
+    width: 15em;
+    padding: 1.2vh;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    background-color: #eeeeee;
+    border: 0px;
+    margin: 15px 0px;
+    outline: none;
+    color: #222222;
+}
+
+.btn::-webkit-input-placeholder{    
+    color: #c1c5c3;
+}
+
+.btsend {
+    background-image: linear-gradient(120deg, #cecfd1 0%, #9a9ca0 100%);
+    color: #ffffff;
+    text-shadow: 0px 2px 2px #9a9ca0;
+    padding: 1.5vh;
+    border-radius: 2px 2px;
+    border: 0px;
+    cursor: pointer;
+}
+
+/*********************************************** Mapa */
+
+.mapa iframe {
+    margin: 15px 0px 0px 0px;
+    width: 100%;
+    height: 25em;
+    border: 0px;
+}
